@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Blog Generator - Create Engaging Content with AI</title>
+    <meta name="description" content="Generate high-quality blog posts with AI. Choose from multiple tones, lengths, and topics. Export your content instantly.">
+    <meta name="keywords" content="AI blog generator, content creation, blog writing, artificial intelligence, content marketing">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI Blog Generator</h1>
+            <p>Create engaging blog posts with artificial intelligence</p>
+        </div>
+
+        <div class="main-content">
+            <div class="input-section">
+                <div class="form-group">
+                    <label for="topic">Blog Topic</label>
+                    <input type="text" id="topic" placeholder="e.g., The Future of Artificial Intelligence" maxlength="100">
+                </div>
+
+                <div class="form-group">
+                    <label for="tone">Writing Tone</label>
+                    <select id="tone">
+                        <option value="professional">Professional</option>
+                        <option value="casual">Casual</option>
+                        <option value="educational">Educational</option>
+                        <option value="conversational">Conversational</option>
+                        <option value="technical">Technical</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="length">Article Length</label>
+                    <select id="length">
+                        <option value="short">Short (300-500 words)</option>
+                        <option value="medium">Medium (500-800 words)</option>
+                        <option value="long">Long (800+ words)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="keywords">Keywords (optional)</label>
+                    <input type="text" id="keywords" placeholder="e.g., machine learning, technology, innovation" maxlength="200">
+                </div>
+
+                <button class="generate-btn" onclick="generateBlog()">Generate Blog Post</button>
+                <p style="text-align: center; margin-top: 10px; color: #666; font-size: 14px;">
+                    💡 Pro tip: Press Ctrl+Enter to generate quickly
+                </p>
+            </div>
+
+            <div class="output-section" id="output" style="display: none;">
+                <h3>Generated Blog Post</h3>
+                <div id="blog-content"></div>
+                <button class="export-btn" onclick="exportBlog()">Export as HTML</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
